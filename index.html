@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Deatils</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <form>
+    <div style="display: none;" id="form_div">
+        <p>Add Employee</p>
+        <div id="input">
+            <div>
+                <p>First Name*</p><input id="firstname" type="text" placeholder="Enter First Name" >
+                <h6 id="one"></h6>
+            </div>
+            <div>
+                <p>Last Name*</p><input  id="lastname" type="text" placeholder="Enter Last Name">
+                <h6 id="two"></h6>
+            </div>
+            <div>
+                <p>Designation*</p><input  id="designation" type="text" placeholder="Enter Designation">
+                <h6 id="three"></h6>
+            </div>
+            <div>
+                <p>Contact Deatils*</p><input  id="phone"  type="number" placeholder="Enter contact Number">
+                <h6 id="four"></h6>
+            </div>
+        </div>
+        <div id="Add_Emp_btn">
+            <button id="Cancle" onclick=handleCancle()>Cancle</button>
+            <button id="Add" onclick=user_input_details()>Add</button>
+        </div>
+    </div>
+</form>
+    <div id="Employee_Information">
+        <p>Employee Information</p>
+        <button onclick="handleSubmit()">Add</button>
+    </div>
+
+
+    <div id="table">
+        <table>
+            <thead>
+                <th id="table_body">FIRST NAME</th>
+                <th id="table_body">LAST NAME</th>
+                <th id="table_body">DESIGNATION</th>
+                <th id="table_body">CONTACT NUMBER</th>
+                <th id="table_body"></th>
+            </thead>
+            <tbody id="tbody"></tbody>        
+            </table>
+    </div>
+    <div id="empty">No Records found</div>  
+   </body>
+<script src="./index.js"></script>
+
+</html>
